@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+
+/* Set Burger Free as default font for all elements */
+html{
+background: #030104;
+}
+
+/* Apply stronger font weight to headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Burger Free', sans-serif;
+    font-weight: 600;
+}
+
+:root {
+    --primary-green: #16A34A;
+    --secondary-green: #22C55E;
+}
+
+body {
+    background: 030104;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+.card {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary {
+    background: var(--primary-green) !important;
+    border-color: var(--primary-green) !important;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-green) !important;
+    border-color: var(--secondary-green) !important;
+}
+
+.textarea-bordered,
+.input-bordered {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.textarea-bordered:focus,
+.input-bordered:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.2);
+}
+
+.label-text {
+    color: rgba(255, 255, 255, 0.8);
+}
+.drawshadow {
+   
+  box-shadow: 8px 0px 28px 0px #0105114D; /* Apply shadow to the right */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow */
+}
+.getstarted {
+    background: linear-gradient(128.49deg, #CB3CFF 19.86%, #7F25FB 68.34%);
+
+}
+.grad {
+background: linear-gradient(128.49deg, #CB3CFF 19.86%, #7F25FB 68.34%);
+}
+:hover.grad {
+  background: #CB3CFF;
+}
+.edit {
+    font-size: 16px !important;
+}
+.gradien {
+  background: linear-gradient(90deg, #7925A6 0%, #D79DDA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Optional for broader support */
+  color: transparent;
+}
